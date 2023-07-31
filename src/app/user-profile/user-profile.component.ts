@@ -28,7 +28,8 @@ class User {
 })
 export class UserProfileComponent {
   userProfile: User;
-  showAge: boolean = true;
+  displayButton: boolean = true;
+
   constructor() {
     this.userProfile = new User(
       "Doe",
@@ -37,8 +38,5 @@ export class UserProfileComponent {
       "",
       "https://randomuser.me/api/portraits/lego/2.jpg"
     );
-  }
-  toggleAgeVisibility() {
-    this.showAge = !this.showAge;
   }
 }

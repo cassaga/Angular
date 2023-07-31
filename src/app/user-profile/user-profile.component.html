@@ -6,6 +6,6 @@
   <input [(ngModel)]="userProfile.quote">
   <br>
 
-  <p [hidden]="!showAge">Age: {{ userProfile.age }}</p>
-  <button (click)="toggleAgeVisibility()">Masquer / Afficher Age</button>
+  <p *ngIf="displayButton">Age: {{ userProfile.age }}</p>
+  <button (click)="displayButton = !displayButton">Masquer / Afficher Age</button>
 </div>
