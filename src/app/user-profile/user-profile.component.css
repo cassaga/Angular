@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+
+  flex-direction: column;
+  border: solid 2px grey;
+  padding: 10px;
+  width: 30%;
+  border-radius: 15px;
+  background: rgb(233, 228, 228);
+
+}
